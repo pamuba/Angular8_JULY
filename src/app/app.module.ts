@@ -13,6 +13,7 @@ import { SwitchComponent } from './switch/switch.component';
 import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { CustomPipeComponent } from './custom-pipe/custom-pipe.component';
+import { CustomHerosPipe } from './custom-heros.pipe'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CustomPipeComponent } from './custom-pipe/custom-pipe.component';
     SwitchComponent,
     ComponentInteractionComponent,
     PipesComponent,
-    CustomPipeComponent
+    CustomPipeComponent,
+    CustomHerosPipe
   ],
   imports: [
     BrowserModule,
