@@ -1,0 +1,24 @@
+<input [(ngModel)]="name" type="text">
+{{name}}
+
+<!-- Structural Directives -->
+<!-- <h2 *ngIf="displayName; else elseblock">
+    Angular8
+</h2>
+
+<ng-template #elseblock>
+    <h2>
+        Angular8 is hidden
+    </h2>
+</ng-template> -->
+
+<div *ngIf="displayName; then thenBlock; else elseBlock"></div>
+
+<ng-template #thenBlock>
+    <h2>Then Block</h2>
+</ng-template>
+
+<ng-template #elseBlock>
+    <h2>Else Block</h2>
+</ng-template>
+
