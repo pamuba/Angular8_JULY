@@ -13,7 +13,11 @@ import { SwitchComponent } from './switch/switch.component';
 import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { CustomPipeComponent } from './custom-pipe/custom-pipe.component';
-import { CustomHerosPipe } from './custom-heros.pipe'
+import { CustomHerosPipe } from './custom-heros.pipe';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { EmployeeDetailComponent } from './employee-detail/employee-detail.component'
+import { EmployeeService } from './employee.service'
+
 
 @NgModule({
   declarations: [
@@ -27,14 +31,16 @@ import { CustomHerosPipe } from './custom-heros.pipe'
     ComponentInteractionComponent,
     PipesComponent,
     CustomPipeComponent,
-    CustomHerosPipe
+    CustomHerosPipe,
+    EmployeeListComponent,
+    EmployeeDetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
